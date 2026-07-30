@@ -1,0 +1,42 @@
+/
+├── index.html
+├── catalogo.html
+├── categoria.html
+├── produto.html
+├── sobre.html
+├── contato.html
+├── faq.html
+│
+├── assets/
+│   ├── css/
+│   │   ├── global.css
+│   │   ├── home.css
+│   │   ├── catalogo.css
+│   │   ├── produto.css
+│   │   ├── components.css
+│   │   └── responsive.css
+│   │
+│   ├── js/
+│   │   ├── app.js
+│   │   ├── catalogo.js
+│   │   ├── produto.js
+│   │   ├── filtros.js
+│   │   ├── pesquisa.js
+│   │   └── whatsapp.js
+│   │
+│   ├── images/
+│   │   ├── banners/
+│   │
+│   │   ├── produtos/
+│   │   ├── marcas/
+│   │   └── icons/
+│   │
+│   └── fonts/
+│
+├── data/
+│   ├── produtos.json
+│   
+│   
+│  
+│
+└── favicon.ico

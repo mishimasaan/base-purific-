@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Catálogo | Purificá</title>
+
+    <link rel="icon" href="favicon.ico">
+
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+    <link rel="stylesheet" href="assets/css/catalogo.css">
+    <link rel="stylesheet" href="assets/css/catalogo-sidebar.css">
+    <link rel="stylesheet" href="assets/css/catalogo-products.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <div class="container">
+
+        <a href="index.html" class="logo">
+
+            <img src="assets/images/logo.png" alt="Purificá">
+
+        </a>
+
+        <nav class="nav-links">
+
+            <a href="index.html">Início</a>
+            <a href="catalogo.html" class="active">Catálogo</a>
+            <a href="categorias.html">Categorias</a>
+            <a href="diferenciais.html">Diferenciais</a>
+            <a href="sobre.html">Sobre nós</a>
+            <a href="faq.html">FAQ</a>
+            <a href="contato.html">Contato</a>
+
+        </nav>
+
+        <a href="https://wa.me/5511999999999"
+           class="btn btn-primary navbar-whatsapp"
+           target="_blank">
+
+            <img src="assets/images/icons/whatsapp.svg" alt="WhatsApp">
+
+            <span>Fale no WhatsApp</span>
+
+        </a>
+
+        <button class="menu-toggle" aria-label="Abrir menu">
+
+            <span></span>
+            <span></span>
+            <span></span>
+
+        </button>
+
+    </div>
+
+</header>
+
+<main>
+
+<section class="catalog-page">
+
+    <div class="container">
+
+        <div class="breadcrumb">
+
+            <a href="index.html">Home</a>
+
+            <span>/</span>
+
+            <p>Catálogo</p>
+
+        </div>
+
+        <div class="catalog-layout">
+
+            <div class="catalog-banner">
+
+                <div class="banner-content">
+
+                    <h2>
+
+                        Água pura para sua casa
+
+                    </h2>
+
+                    <p>
+
+                        Conheça nossa linha de purificadores, filtros e acessórios.
+
+                    </p>
+
+                    <a href="#" class="btn btn-primary">
+
+                        Ver produtos
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            <aside class="sidebar">
+
+                <h3>Filtros</h3>
+
+                <div class="filter-group">
+
+                    <h4>Categorias</h4>
+
+                    <label><input type="checkbox"> Purificadores</label>
+                    <label><input type="checkbox"> Filtros</label>
+                    <label><input type="checkbox"> Refis</label>
+                    <label><input type="checkbox"> Torneiras</label>
+                    <label><input type="checkbox"> Acessórios</label>
+
+                </div>
+
+                <div class="filter-group">
+
+                    <h4>Marca</h4>
+
+                    <label><input type="checkbox"> Purificá</label>
+                    <label><input type="checkbox"> Lorenzetti</label>
+                    <label><input type="checkbox"> IBBL</label>
+
+                </div>
+
+                <div class="filter-group">
+
+                    <h4>Faixa de preço</h4>
+
+                    <input type="range">
+
+                </div>
+
+            </aside>
+
+            <section class="catalog-content">
+
+                <div class="catalog-header">
+
+                    <div>
+
+                        <h2>
+
+                            Todos os Produtos
+
+                        </h2>
+
+                        <p id="products-count">
+
+                            0 produtos encontrados
+
+                        </p>
+
+                    </div>
+
+                    <div class="catalog-sort">
+
+                        <p>Ordenar por</p>
+
+                        <button class="sort-toggle">
+
+                            <span>Relevância</span>
+
+                            <img src="assets/images/icons/chevron.svg" alt="Abrir">
+
+                        </button>
+
+                        <div class="sort-menu">
+
+                            <button class="active" data-sort="relevance">Relevância</button>
+                            <button data-sort="popular">Mais vendidos</button>
+                            <button data-sort="recent">Mais recentes</button>
+                            <button data-sort="discount">Maior desconto</button>
+                            <button data-sort="price-asc">Menor preço</button>
+                            <button data-sort="price-desc">Maior preço</button>
+                            <button data-sort="name-asc">Nome A-Z</button>
+                            <button data-sort="name-desc">Nome Z-A</button>
+
+                        </div>
+
+                    </div>
+
+                    <button class="filters-toggle">
+
+                        <img src="assets/images/icons/filter.svg" alt="Filtros">
+
+                        <span>Filtros</span>
+
+                    </button>
+
+                </div>
+
+                <div class="products-grid"></div>
+
+            </section>
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+<a href="https://wa.me/5511999999999"
+   class="whatsapp-floating"
+   target="_blank"
+   aria-label="WhatsApp">
+
+    <img src="assets/images/icons/whatsapp.svg" alt="WhatsApp">
+
+</a>
+
+<script src="assets/js/app.js"></script>
+<script src="assets/js/catalogo.js"></script>
+<script src="assets/js/effect.js"></script>
+<script src="assets/js/sort.js"></script>
+<script src="assets/js/filters.js"></script>
+
+</body>
+
+</html>
