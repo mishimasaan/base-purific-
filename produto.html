@@ -5,119 +5,655 @@
 
     <meta charset="UTF-8">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Conheça nossos purificadores de água e encontre o modelo ideal para sua casa ou empresa.">
 
     <title>Produto | Purificá</title>
 
     <link rel="icon" href="favicon.ico">
 
-    <link rel="stylesheet" href="assets/css/global.css">
-    <link rel="stylesheet" href="assets/css/components.css">
-    <link rel="stylesheet" href="assets/css/produto.css">
-    <link rel="stylesheet" href="assets/css/responsive.css">
-
+<link rel="stylesheet" href="assets/css/global.css">
+<link rel="stylesheet" href="assets/css/components.css">
+<link rel="stylesheet" href="assets/css/produto.css">
+<link rel="stylesheet" href="assets/css/cta.css">
+<link rel="stylesheet" href="assets/css/footer.css">
 </head>
 
 <body>
 
-<header class="navbar">
+<div id="navbar"></div>
 
-    <div class="container">
+<main class="product-main">
 
-        <a href="index.html" class="logo">
+    <section class="product-page">
 
-            <img src="assets/images/logo.png" alt="Purificá">
+        <div class="container">
 
-        </a>
+            <nav class="product-breadcrumb"
+                 aria-label="Navegação estrutural">
 
-        <nav class="nav-links">
+                <a href="index.html"
+                   class="product-breadcrumb-link">
 
-            <a href="index.html">Início</a>
-            <a href="catalogo.html">Catálogo</a>
-            <a href="diferenciais.html">Diferenciais</a>
-            <a href="sobre.html">Sobre nós</a>
-            <a href="faq.html">FAQ</a>
-            <a href="contato.html">Contato</a>
+                    Início
 
-        </nav>
+                </a>
 
-<a href="https://wa.me/5511999999999"
-   class="btn btn-primary navbar-whatsapp"
-   target="_blank">
+                <span class="product-breadcrumb-separator"
+                      aria-hidden="true">
 
-    <img src="assets/images/icons/whatsapp.svg" alt="WhatsApp">
+                    ›
 
-    <span>Fale no WhatsApp</span>
+                </span>
+
+                <a href="catalogo.html"
+                   class="product-breadcrumb-link">
+
+                    Catálogo
+
+                </a>
+
+                <span class="product-breadcrumb-separator"
+                      aria-hidden="true">
+
+                    ›
+
+                </span>
+
+                <span class="product-breadcrumb-current"
+                      id="breadcrumb-product">
+
+                    Produto
+
+                </span>
+
+            </nav>
+
+            <section class="product-showcase"
+                     aria-labelledby="product-title">
+
+                <div class="product-layout">
+
+                    <div class="product-gallery">
+
+                        <div class="product-thumbnails-wrapper">
+
+                            <button class="product-gallery-control product-gallery-control--up"
+                                    type="button"
+                                    id="product-gallery-up"
+                                    aria-label="Ver imagens anteriores">
+
+                                <span aria-hidden="true">⌃</span>
+
+                            </button>
+
+                            <div class="product-thumbnails"
+                                 id="product-thumbnails"></div>
+
+                            <button class="product-gallery-control product-gallery-control--down"
+                                    type="button"
+                                    id="product-gallery-down"
+                                    aria-label="Ver próximas imagens">
+
+                                <span aria-hidden="true">⌄</span>
+
+                            </button>
+
+                        </div>
+
+                        <div class="product-image-card">
+
+                            <div class="product-image-stage">
+
+                                <img id="product-main-image"
+                                     class="product-main-image"
+                                     src=""
+                                     alt="">
+
+                                <div class="product-image-benefits"
+                                     id="product-image-benefits"></div>
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+                    <article class="product-info">
+
+                        <div class="product-heading">
+
+                            <span class="product-category"
+                                  id="product-category">
+
+                                Purificador
+
+                            </span>
+
+                            <h1 class="product-title"
+                                id="product-title">
+
+                                Produto
+
+                            </h1>
+
+                            <p class="product-subtitle"
+                               id="product-subtitle">
+
+                                Conheça mais sobre este produto.
+
+                            </p>
+
+                        </div>
+
+                        <div class="product-price-wrapper">
+
+                            <span class="product-price-label">
+
+                                Por apenas
+
+                            </span>
+
+                            <strong class="product-price"
+                                    id="product-price">
+
+                                R$ 0,00
+
+                            </strong>
+
+                            <span class="product-installment"
+                                  id="product-installment">
+
+                                Consulte as condições de pagamento
+
+                            </span>
+
+                        </div>
+
+                        <div class="product-action"
+                             id="product-action"></div>
+
+                        <div class="product-delivery-card">
+
+                            <div class="product-delivery-icon"
+                                 aria-hidden="true">
+
+                                <img src="assets/images/icons/truck.svg"
+                                     alt="">
+
+                            </div>
+
+                            <div class="product-delivery-content">
+
+                                <strong>
+
+                                    Entrega para toda a região
+
+                                </strong>
+
+                                <span>
+
+                                    Consulte o prazo e o valor da entrega.
+
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                        <div class="product-details">
+
+                            <article class="product-detail-card">
+
+                                <button class="product-detail-header"
+                                        type="button"
+                                        aria-expanded="true"
+                                        aria-controls="product-description">
+
+                                    <span>
+
+                                        Descrição
+
+                                    </span>
+
+                                    <span class="product-detail-arrow"
+                                          aria-hidden="true">
+
+                                        ⌃
+
+                                    </span>
+
+                                </button>
+
+                                <div class="product-detail-content"
+                                     id="product-description">
+
+                                    <p id="product-description-text">
+
+                                        Informações do produto.
+
+                                    </p>
+
+                                </div>
+
+                            </article>
+
+                            <article class="product-detail-card">
+
+                                <button class="product-detail-header"
+                                        type="button"
+                                        aria-expanded="true"
+                                        aria-controls="product-specifications">
+
+                                    <span>
+
+                                        Especificações
+
+                                    </span>
+
+                                    <span class="product-detail-arrow"
+                                          aria-hidden="true">
+
+                                        ⌃
+
+                                    </span>
+
+                                </button>
+
+                                <div class="product-detail-content"
+                                     id="product-specifications">
+
+                                    <div class="product-specifications-list"
+                                         id="product-specifications-list"></div>
+
+                                </div>
+
+                            </article>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </section>
+
+            <section class="product-benefits"
+                     aria-label="Benefícios dos produtos Purificá">
+
+                <article class="product-benefit-card">
+
+                    <div class="product-benefit-icon">
+
+                        <img src="assets/images/icons/shield.svg"
+                             alt="">
+
+                    </div>
+
+                    <div class="product-benefit-content">
+
+                        <h3>
+
+                            Água pura e segura
+
+                        </h3>
+
+                        <p>
+
+                            Elimina impurezas e garante mais saúde para sua família.
+
+                        </p>
+
+                    </div>
+
+                </article>
+
+                <article class="product-benefit-card">
+
+                    <div class="product-benefit-icon">
+
+                        <img src="assets/images/icons/economy.svg"
+                             alt="">
+
+                    </div>
+
+                    <div class="product-benefit-content">
+
+                        <h3>
+
+                            Mais economia
+
+                        </h3>
+
+                        <p>
+
+                            Reduz o uso de garrafas plásticas e economiza dinheiro.
+
+                        </p>
+
+                    </div>
+
+                </article>
+
+                <article class="product-benefit-card">
+
+                    <div class="product-benefit-icon">
+
+                        <img src="assets/images/icons/tools.svg"
+                             alt="">
+
+                    </div>
+
+                    <div class="product-benefit-content">
+
+                        <h3>
+
+                            Fácil instalação
+
+                        </h3>
+
+                        <p>
+
+                            Instalação simples, rápida e sem necessidade de obras.
+
+                        </p>
+
+                    </div>
+
+                </article>
+
+                <article class="product-benefit-card">
+
+                    <div class="product-benefit-icon">
+
+                        <img src="assets/images/icons/quality.svg"
+                             alt="">
+
+                    </div>
+
+                    <div class="product-benefit-content">
+
+                        <h3>
+
+                            Garantia de qualidade
+
+                        </h3>
+
+                        <p>
+
+                            Produtos certificados e com garantia de fábrica.
+
+                        </p>
+
+                    </div>
+
+                </article>
+
+            </section>
+
+            <section class="related-products">
+
+                <div class="related-products-header">
+
+                    <div>
+
+                        <span class="related-products-label">
+
+                            Veja também
+
+                        </span>
+
+                        <h2>
+
+                            Produtos relacionados
+
+                        </h2>
+
+                    </div>
+
+                    <div class="related-products-controls">
+
+                        <button class="related-products-control related-products-control--previous"
+                                type="button"
+                                id="related-products-previous"
+                                aria-label="Produtos anteriores">
+
+                            ←
+
+                        </button>
+
+                        <button class="related-products-control related-products-control--next"
+                                type="button"
+                                id="related-products-next"
+                                aria-label="Próximos produtos">
+
+                            →
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <div class="products-grid"
+                     id="related-products"></div>
+
+            </section>
+
+        </div>
+
+    </section>
+
+<section class="cta-whatsapp">
+
+
+<div class="container">
+
+
+<div class="cta-content">
+
+
+
+
+
+<div class="cta-icon">
+
+
+<img 
+src="assets/images/icons/whatsapp.svg"
+alt="WhatsApp"
+>
+
+
+</div>
+
+
+
+
+
+<div class="cta-text">
+
+
+<h2>
+
+Precisa de ajuda para escolher?
+
+</h2>
+
+
+
+<p>
+
+Nossa equipe está pronta para ajudar a encontrar
+o purificador ideal para sua necessidade.
+
+</p>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+<a 
+href="https://wa.me/5511999999999"
+class="cta-button"
+target="_blank"
+>
+
+
+<img 
+src="assets/images/icons/whatsapp.svg"
+alt="WhatsApp"
+>
+
+
+Fale no WhatsApp
+
 
 </a>
 
 
-<button class="menu-toggle" aria-label="Abrir menu">
 
-    <span></span>
-    <span></span>
-    <span></span>
 
-</button>
-
-    </div>
-
-</header>
-
-<main>
-
-<section class="product-page">
-
-<div class="container">
-
-<div class="breadcrumb">
-
-<a href="index.html">Home</a>
-
-<span>/</span>
-
-<a href="catalogo.html">Catálogo</a>
-
-<span>/</span>
-
-<p id="breadcrumb-product">
-
-Produto
-
-</p>
 
 </div>
 
-<div id="product-container"></div>
-
-<section class="related-products">
-
-<h2>
-
-Produtos relacionados
-
-</h2>
-
-<div class="products-grid" id="related-products"></div>
-
-</section>
 
 </div>
 
+
 </section>
+
+    <section class="product-security">
+
+        <div class="container product-security-grid">
+
+            <article class="product-security-item">
+
+                <img src="assets/images/icons/payment.svg"
+                     alt="">
+
+                <div>
+
+                    <strong>
+
+                        Pagamento facilitado
+
+                    </strong>
+
+                    <span>
+
+                        Em até 6x sem juros
+
+                    </span>
+
+                </div>
+
+            </article>
+
+            <article class="product-security-item">
+
+                <img src="assets/images/icons/lock.svg"
+                     alt="">
+
+                <div>
+
+                    <strong>
+
+                        Compra segura
+
+                    </strong>
+
+                    <span>
+
+                        Seus dados protegidos
+
+                    </span>
+
+                </div>
+
+            </article>
+
+            <article class="product-security-item">
+
+                <img src="assets/images/icons/support.svg"
+                     alt="">
+
+                <div>
+
+                    <strong>
+
+                        Suporte especializado
+
+                    </strong>
+
+                    <span>
+
+                        Atendimento humanizado
+
+                    </span>
+
+                </div>
+
+            </article>
+
+            <article class="product-security-item">
+
+                <img src="assets/images/icons/quality.svg"
+                     alt="">
+
+                <div>
+
+                    <strong>
+
+                        Pós-venda garantido
+
+                    </strong>
+
+                    <span>
+
+                        Assistência completa
+
+                    </span>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </section>
 
 </main>
+
+<div id="footer"></div>
 
 <a href="https://wa.me/5511999999999"
    class="whatsapp-floating"
    target="_blank"
+   rel="noopener noreferrer"
    aria-label="WhatsApp">
 
-    <img src="assets/images/icons/whatsapp.svg" alt="WhatsApp">
+    <img src="assets/images/icons/whatsapp.svg"
+         alt="WhatsApp">
 
 </a>
+
 <script src="assets/js/app.js"></script>
 <script src="assets/js/produto.js"></script>
+<script src="assets/js/visual-produto.js"></script>
+<script src="assets/js/navbar.js"></script>
+<script src="assets/js/footer.js"></script>
 
 </body>
 
